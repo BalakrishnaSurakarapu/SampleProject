@@ -1,0 +1,20 @@
+<p>users:{{users|json}}</p>
+<table>
+  <thead>
+    <tr>
+      <th>RegionId</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let User of users">
+      <td>{{User.regionId}}</td>
+      <td>{{User.name}}</td>
+      <td>{{User.code}}</td>
+      <td>{{User.imageUrl}}</td>
+
+    </tr>
+  </tbody>
+</table>
